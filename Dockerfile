@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y python3-pip python3-dev postgresql libp
   pip3 install --upgrade six && \
   pip3 install psycopg2 &&\
   locale-gen en_US.UTF-8 && \
-  apt-get clean autoclean && apt-get autoremove -y && rm -rf /var/lib/{apt,dpkg,cache,log}/
+  rm -rf /var/lib/{apt,dpkg,cache,log}/
 
 ENV LANGUAGE en_US.UTF-8
 ENV LANG en_US.UTF-8
